@@ -26,3 +26,19 @@ The model inspects URLs for:
 ```bash
 git clone [https://github.com/YOUR_USERNAME/ai-phishing-url-detector.git](https://github.com/YOUR_USERNAME/ai-phishing-url-detector.git)
 cd ai-phishing-url-detector
+
+Install Dependencies
+pip install -r requirements.txt
+3. Training the Model
+To train the model using your phishing_urls.csv dataset:
+
+python train_model.py
+Live Prediction
+Check a suspicious URL manually:
+
+python predict_url.py
+Performance
+The model utilizes a Random Forest Classifier with balanced class weights, optimized to minimize false negatives in a cybersecurity context.
+
+Developed by Hazan - Computer Engineering Student
+
